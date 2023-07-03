@@ -2,19 +2,40 @@
 <html>
     <head>
         <meta charset="utf8">
+        <link rel="stylesheet" href="style.css">
         <title>Air Gandiol</title>
     </head>
     <body>
+        <header>
         <!--creation de la barre de navigation-->
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#travail">Travail</a></li>
-                <li><a href="#cv">Cv</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <div class="principale">
+                <div class="logo">
+                    <a href="#logo">Air GANDIOL</a>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li class="active">
+                            <a href="#accueil">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="#apropos">À propos</a>
+                        </li>
+                        <li>
+                            <a href="#travail">Travail</a>
+                        </li>
+                        <li>
+                            <a href="#cv">Cv</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div>
+            <img width="560" height="315" src="avion.img.jpg" alt="image avion">
+        </div>
         <!--creation des section--> 
         <section id="apropos">
             <h1>À propos</h1>
@@ -71,12 +92,12 @@
         <section id="contact">
             <h1>Conctacter nous</h1>
             <form>
-                <label for="name">Prénom</label>
+                <label for="name">Prénom :</label>
                 <input type="name" id="name"><br>
-                <label for="email">Email</label>
+                <label for="email">Email :</label>
                 <input type="email" id="email"><br>
-                <label for="number">Numero téléphone</label>
-                <input type="number" id="number"><br>
+                <label for="number">Numero téléphone :</label>
+                <input type="tel" id="téléphone"><br>
                 <label for="message">Message :</label>
                 <textarea id="message" name="message" rows="3" cols="40"></textarea><br>
                 <button type="submit">Soumettre</button>
@@ -85,16 +106,26 @@
         <!--creation du pied de page-->
         <footer>
             <div class="container">
-              <p>&copy; 2023 Air Gandiol. Tous droits réservés.</p>
               <nav>
                 <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#apropos">À propos</a></li>
-                    <li><a href="#travail">Travail</a></li>
-                    <li><a href="#cv">Cv</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="#accueil">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#apropos">À propos</a>
+                    </li>
+                    <li>
+                        <a href="#travail">Travail</a>
+                    </li>
+                    <li>
+                        <a href="#cv">Cv</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
               </nav>
+              <p>&copy; 2023 Air Gandiol Tous droits réservés</p>
             </div>
         </footer>
     </body>
